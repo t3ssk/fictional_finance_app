@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SvgVideo = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={14} height={12} fill="none" {...props}><path fill="#201F24" d="M13.5 11a.5.5 0 0 1-.5.5H1a.5.5 0 0 1 0-1h12a.5.5 0 0 1 .5.5m0-9.5v7a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1M9.25 5a.5.5 0 0 0-.213-.41l-2.5-1.75a.5.5 0 0 0-.787.41v3.5a.5.5 0 0 0 .787.41l2.5-1.75A.5.5 0 0 0 9.25 5" /></svg>;
+export default SvgVideo;

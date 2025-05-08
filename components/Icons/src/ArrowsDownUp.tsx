@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SvgArrowsDownUp = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} fill="none" {...props}><path fill="#201F24" d="M5.462 8.809a.5.5 0 0 1-.108.545l-2 2a.5.5 0 0 1-.708 0l-2-2A.5.5 0 0 1 1 8.5h1.5V1a.5.5 0 0 1 1 0v7.5H5a.5.5 0 0 1 .462.309m5.892-6.163-2-2a.5.5 0 0 0-.708 0l-2 2A.5.5 0 0 0 7 3.5h1.5V11a.5.5 0 0 0 1 0V3.5H11a.5.5 0 0 0 .354-.854" /></svg>;
+export default SvgArrowsDownUp;

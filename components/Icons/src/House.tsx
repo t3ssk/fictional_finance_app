@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SvgHouse = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={12} height={13} fill="none" {...props}><path fill="#201F24" d="M12 6.222V12a1 1 0 0 1-1 1H8.5a1 1 0 0 1-1-1V9.5A.5.5 0 0 0 7 9H5a.5.5 0 0 0-.5.5V12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V6.222a1 1 0 0 1 .323-.736l5-4.718.007-.007a1 1 0 0 1 1.353.007l5 4.718a1 1 0 0 1 .317.736" /></svg>;
+export default SvgHouse;

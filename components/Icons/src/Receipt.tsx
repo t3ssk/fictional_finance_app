@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SvgReceipt = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={14} height={12} fill="none" {...props}><path fill="#201F24" d="M12.5.5h-11a1 1 0 0 0-1 1V11a.5.5 0 0 0 .724.447L3 10.559l1.776.888a.5.5 0 0 0 .448 0L7 10.559l1.776.888a.5.5 0 0 0 .448 0L11 10.559l1.776.888A.5.5 0 0 0 13.5 11V1.5a1 1 0 0 0-1-1M10 7H4a.5.5 0 1 1 0-1h6a.5.5 0 0 1 0 1m0-2H4a.5.5 0 1 1 0-1h6a.5.5 0 0 1 0 1" /></svg>;
+export default SvgReceipt;

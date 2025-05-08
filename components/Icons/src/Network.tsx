@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SvgNetwork = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={14} height={13} fill="none" {...props}><path fill="#201F24" d="M14 6.5a.5.5 0 0 1-.5.5h-2v2h.5a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h.5V7h-7v2H4a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h.5V7h-2a.5.5 0 0 1 0-1h6V4.5H6a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-.5V6h6a.5.5 0 0 1 .5.5" /></svg>;
+export default SvgNetwork;

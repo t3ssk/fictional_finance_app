@@ -38,7 +38,7 @@ export const buttonStylesVisualVariants = styleVariants({
                 backgroundColor: vars.colors.white.white,
                 border: `1px solid ${vars.colors.grey[900]}`,
             }
-        }
+        },
     },
     tertiary: {
         padding: "0px",

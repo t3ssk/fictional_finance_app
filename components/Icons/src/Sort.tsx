@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SvgSort = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} fill="none" {...props}><path fill="#201F24" d="M11 0H1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1M2.5 2.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 1 1 0-1m2.5 7H2.5a.5.5 0 1 1 0-1H5a.5.5 0 1 1 0 1m.5-3h-3a.5.5 0 1 1 0-1h3a.5.5 0 1 1 0 1m4.854 1.854-1.5 1.5a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293V5.5a.5.5 0 1 1 1 0v2.793l.646-.647a.5.5 0 0 1 .708.708" /></svg>;
+export default SvgSort;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SvgWrench = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={14} height={14} fill="none" {...props}><path fill="#201F24" d="M13.5 5a4.5 4.5 0 0 1-6.309 4.125l-3.253 3.764-.025.026a2 2 0 1 1-2.829-2.829l.027-.024 3.764-3.253A4.504 4.504 0 0 1 10.096.635a.5.5 0 0 1 .246.824L8 4l.354 1.647L10 6l2.54-2.345a.5.5 0 0 1 .825.246Q13.5 4.442 13.5 5" /></svg>;
+export default SvgWrench;
