@@ -5,6 +5,7 @@ import {
   buttonStylesVisualVariants,
   buttonStylesFullWidthVariants,
 } from './Button.css';
+import { IntrinsicAttributes } from 'utils/types/IntrinsicAttributes';
 
 type ButtonOwnProps<Element extends React.ElementType = React.ElementType> = {
   children?: React.ReactNode;
@@ -13,10 +14,6 @@ type ButtonOwnProps<Element extends React.ElementType = React.ElementType> = {
   fullWidth?: boolean;
   variant?: 'primary' | 'secondary' | 'tertiary' | 'destroy';
 };
-
-export type IntrinsicAttributes<
-  E extends keyof JSX.IntrinsicElements | React.JSXElementConstructor<unknown>,
-> = JSX.LibraryManagedAttributes<E, React.ComponentPropsWithRef<E>>;
 
 type ButtonProps<E extends React.ElementType> = ButtonOwnProps<E> &
   Omit<IntrinsicAttributes<E>, keyof ButtonOwnProps>;
