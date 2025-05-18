@@ -75,19 +75,19 @@ export const colorStyleVariants = styleVariants({
 export const fontSizeStyleVariants = styleVariants({
   unset: {},
   32: {
-    fontSize: '32px',
+    fontSize: '2rem',
   },
   20: {
-    fontSize: '20px',
+    fontSize: '1.25rem',
   },
   16: {
-    fontSize: '16px',
+    fontSize: '1rem',
   },
   14: {
-    fontSize: '14px',
+    fontSize: '.875rem',
   },
   12: {
-    fontSize: '12px',
+    fontSize: '.75rem',
   },
 });
 
@@ -116,45 +116,45 @@ export const typographyCursorPointerStyle = style({
 
 export const typographyPresetStyleVariants = styleVariants({
   preset1: {
-    fontSize: '32px',
+    fontSize: '2rem',
     lineHeight: '120%',
-    fontWeight: 'normal',
-    letterSpacing: '0px',
+    fontWeight: 'bold',
+    letterSpacing: '0rem',
   },
   preset2: {
-    fontSize: '20px',
+    fontSize: '1.25rem',
     lineHeight: '120%',
     fontWeight: 'normal',
-    letterSpacing: '0px',
+    letterSpacing: '0rem',
   },
   preset3: {
-    fontSize: '16px',
+    fontSize: '1rem',
     lineHeight: '150%',
     fontWeight: 'normal',
-    letterSpacing: '0px',
+    letterSpacing: '0rem',
   },
   preset4: {
-    fontSize: '14px',
+    fontSize: '.875rem',
     lineHeight: '150%',
     fontWeight: 'normal',
-    letterSpacing: '0px',
+    letterSpacing: '0rem',
   },
   preset4bold: {
-    fontSize: '14px',
+    fontSize: '.875rem',
     lineHeight: '150%',
     fontWeight: 'bold',
-    letterSpacing: '0px',
+    letterSpacing: '0rem',
   },
   preset5: {
-    fontSize: '12px',
+    fontSize: '.75rem',
     lineHeight: '150%',
     fontWeight: 'normal',
-    letterSpacing: '0px',
+    letterSpacing: '0rem',
   },
   preset5bold: {
-    fontSize: '12px',
+    fontSize: '.75rem',
     lineHeight: '150%',
     fontWeight: 'bold',
-    letterSpacing: '0px',
+    letterSpacing: '0rem',
   },
 });

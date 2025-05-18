@@ -73,7 +73,6 @@ function TypographyComponent<Element extends React.ElementType>(
   const selectedClassNames = preset
     ? typographyPresetStyleVariants[preset]
     : [
-        colorStyleVariants[color],
         fontSizeStyleVariants[fontSize],
         fontWeightStyleVariants[fontWeight],
         lineHeightStyleVariants[lineHeight],
@@ -85,6 +84,7 @@ function TypographyComponent<Element extends React.ElementType>(
       className={clsx(
         typographyStyle,
         selectedClassNames,
+        colorStyleVariants[color],
         (component === 'a' || component === 'button') && typographyCursorPointerStyle,
         className
       )}

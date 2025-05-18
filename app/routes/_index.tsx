@@ -1,7 +1,6 @@
 import type { MetaFunction } from '@remix-run/node';
-import { Sidebar } from 'components/Sidebar/Sidebar';
 import { ArrowsDownUp, ChartDonut, House, JarFill, Receipt } from 'components/Icons';
-import '../../assets/reset.css';
+import { BasicInput } from 'components/BasicInput/BasicInput';
 export const meta: MetaFunction = () => {
   return [{ title: 'New Remix App' }, { name: 'description', content: 'Welcome to Remix!' }];
 };
@@ -9,7 +8,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div>
-      <Sidebar items={items} />
+      <BasicInput label="Basic Input" helperText="Helper text" />
     </div>
   );
 }

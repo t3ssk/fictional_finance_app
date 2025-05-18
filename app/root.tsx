@@ -1,5 +1,6 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
 import type { LinksFunction } from '@remix-run/node';
+import '../assets/reset.css';
 
 import { themeClass } from 'theme.css';
 
