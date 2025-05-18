@@ -1,3 +1,3 @@
 import type { SVGProps } from "react";
-const SvgShield = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={12} height={13} fill="none" {...props}><path fill="#201F24" d="M11 .5H1a1 1 0 0 0-1 1V5c0 3.295 1.595 5.292 2.933 6.387 1.441 1.179 2.875 1.58 2.938 1.595a.5.5 0 0 0 .262 0c.063-.016 1.495-.416 2.938-1.595C10.405 10.292 12 8.295 12 5V1.5a1 1 0 0 0-1-1m-3 6H6.5V8a.5.5 0 1 1-1 0V6.5H4a.5.5 0 1 1 0-1h1.5V4a.5.5 0 1 1 1 0v1.5H8a.5.5 0 1 1 0 1" /></svg>;
+const SvgShield = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 13" {...props}><path d="M11 .5H1a1 1 0 0 0-1 1V5c0 3.295 1.595 5.292 2.933 6.387 1.441 1.179 2.875 1.58 2.938 1.595a.5.5 0 0 0 .262 0c.063-.016 1.495-.416 2.938-1.595C10.405 10.292 12 8.295 12 5V1.5a1 1 0 0 0-1-1m-3 6H6.5V8a.5.5 0 1 1-1 0V6.5H4a.5.5 0 1 1 0-1h1.5V4a.5.5 0 1 1 1 0v1.5H8a.5.5 0 1 1 0 1" /></svg>;
 export default SvgShield;

@@ -1,3 +1,3 @@
 import type { SVGProps } from "react";
-const SvgArrowFatLinesLeft = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width={13} height={14} fill="none" {...props}><path fill="#201F24" d="M9 4v6a.5.5 0 0 1-.5.5H7V13a.5.5 0 0 1-.854.354l-6-6a.5.5 0 0 1 0-.708l6-6A.5.5 0 0 1 7 1v2.5h1.5A.5.5 0 0 1 9 4m1.5-.5a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 1 0V4a.5.5 0 0 0-.5-.5m2 0a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 1 0V4a.5.5 0 0 0-.5-.5" /></svg>;
+const SvgArrowFatLinesLeft = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 14" {...props}><path d="M9 4v6a.5.5 0 0 1-.5.5H7V13a.5.5 0 0 1-.854.354l-6-6a.5.5 0 0 1 0-.708l6-6A.5.5 0 0 1 7 1v2.5h1.5A.5.5 0 0 1 9 4m1.5-.5a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 1 0V4a.5.5 0 0 0-.5-.5m2 0a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 1 0V4a.5.5 0 0 0-.5-.5" /></svg>;
 export default SvgArrowFatLinesLeft;
