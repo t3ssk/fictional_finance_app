@@ -14,7 +14,7 @@ export const PasswordInput = (props: PasswordInputProps) => {
     <BasicInput
       {...props}
       type={passwordVisible ? 'text' : 'password'}
-      Icon={passwordVisible ? Eye : EyeSlash}
+      Icon={passwordVisible ? EyeSlash : Eye}
       onIconClick={handleIconClick}
     />
   );

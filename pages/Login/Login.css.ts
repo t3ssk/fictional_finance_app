@@ -77,7 +77,7 @@ export const contentSectionStyles = style({
 export const loginFormStyles = style({
   maxWidth: '560px',
   width: '100%',
-  height: '422px',
+  minHeight: '422px',
   '@media': {
     [mediaQuery.mobile]: {
       height: '406px',

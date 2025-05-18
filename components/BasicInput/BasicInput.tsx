@@ -37,35 +37,37 @@ export const BasicInput = ({
   const inputId = id ?? rest.name ?? uniqueId;
   const widthVariant = fullWidth ? 'fullWidth' : 'default';
   return (
-    <div
-      className={clsx(inputWrapperStyles, inputWrapperWidthVariants[widthVariant], className)}
-      data-testid={`text-input-${inputId}`}
-    >
-      <Typography
-        preset="preset5bold"
-        component="label"
-        htmlFor={inputId}
-        color={error ? 'red' : 'grey500'}
+    <>
+      <div
+        className={clsx(inputWrapperStyles, inputWrapperWidthVariants[widthVariant], className)}
+        data-testid={`text-input-${inputId}`}
       >
-        {label}
-      </Typography>
-      <input
-        aria-invalid={rest['aria-invalid'] ?? error}
-        aria-describedby={error && helperText ? `${id ?? 'default'}-helper-text` : undefined}
-        className={clsx(
-          inputStyles,
-          inputStylesBorderVariants[error ? 'error' : 'default'],
-          inputPaddingVariants[Icon ? 'icon' : 'default']
+        <Typography
+          preset="preset5bold"
+          component="label"
+          htmlFor={inputId}
+          color={error ? 'red' : 'grey500'}
+        >
+          {label}
+        </Typography>
+        <input
+          aria-invalid={rest['aria-invalid'] ?? error}
+          aria-describedby={error && helperText ? `${id ?? 'default'}-helper-text` : undefined}
+          className={clsx(
+            inputStyles,
+            inputStylesBorderVariants[error ? 'error' : 'default'],
+            inputPaddingVariants[Icon ? 'icon' : 'default']
+          )}
+          id={inputId}
+          ref={ref}
+          {...rest}
+        />
+        {Icon && (
+          <button onClick={onIconClick} className={iconButtonStyles}>
+            <Icon fill="currentColor" width={24} height={24} />
+          </button>
         )}
-        id={inputId}
-        ref={ref}
-        {...rest}
-      />
-      {Icon && (
-        <button onClick={onIconClick} className={iconButtonStyles}>
-          <Icon fill="currentColor" width={24} height={24} />
-        </button>
-      )}
+      </div>
       <Typography
         preset="preset5"
         color={error ? 'red' : 'grey500'}
@@ -74,6 +76,6 @@ export const BasicInput = ({
       >
         {helperText}
       </Typography>
-    </div>
+    </>
   );
 };

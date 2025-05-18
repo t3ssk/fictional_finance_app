@@ -11,25 +11,31 @@ import {
   signupLinkStyles,
 } from 'pages/Login/Login.css';
 
-//TODO: Add login functionality
-export default function Login() {
+//TODO: Add signup functionality
+export default function Signup() {
   return (
     <Layout>
       <div className={loginFormStyles}>
         <Card>
           <div className={loginFormCardContentStyles}>
             <Typography component="h1" preset="preset1" color="grey900">
-              Login
+              Sign Up
             </Typography>
             <div>
+              <BasicInput label="Name" placeholder="Enter your name" type="text" fullWidth />
               <BasicInput label="Email" placeholder="Enter your email" type="email" fullWidth />
-              <PasswordInput label="Password" placeholder="Enter your password" fullWidth />
+              <PasswordInput
+                label="Create Password"
+                placeholder="Enter your password"
+                helperText="Passwords must be at least 8 characters"
+                fullWidth
+              />
             </div>
             <Button variant="primary" fullWidth>
-              Login
+              Create Account
             </Button>
             <Typography component="p" preset="preset4" color="grey500" className={signupLinkStyles}>
-              Need to create an account? <Link to="/signup">Sign Up</Link>
+              Already have an account? <Link to="/login">Login</Link>
             </Typography>
           </div>
         </Card>

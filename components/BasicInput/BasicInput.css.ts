@@ -46,6 +46,7 @@ export const inputStylesBorderVariants = styleVariants({
 
 export const helperTextStyles = style({
   textAlign: 'right',
+  paddingTop: vars.spacing[50],
 });
 
 export const inputPaddingVariants = styleVariants({
