@@ -124,7 +124,7 @@ export const typographyPresetStyleVariants = styleVariants({
   preset2: {
     fontSize: '1.25rem',
     lineHeight: '120%',
-    fontWeight: 'normal',
+    fontWeight: 'bold',
     letterSpacing: '0rem',
   },
   preset3: {

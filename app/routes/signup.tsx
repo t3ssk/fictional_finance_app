@@ -16,7 +16,7 @@ export default function Signup() {
   return (
     <Layout>
       <div className={loginFormStyles}>
-        <Card>
+        <Card padding="large" variant="default">
           <div className={loginFormCardContentStyles}>
             <Typography component="h1" preset="preset1" color="grey900">
               Sign Up

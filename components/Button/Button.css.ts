@@ -12,6 +12,10 @@ export const buttonStyles = style({
   transition: '0.2s ease-in-out',
   cursor: 'pointer',
   fontFamily: vars.font,
+  ':disabled': {
+    opacity: '0.5',
+    cursor: 'not-allowed',
+  },
 });
 export const buttonStylesVisualVariants = styleVariants({
   primary: {

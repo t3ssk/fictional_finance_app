@@ -11,9 +11,14 @@ export const pageWrapperStyles = style({
 
 export const pageContentStyles = style({
   padding: vars.spacing[500],
+  flex: '1 1 auto',
   '@media': {
     [mediaQuery.mobile]: {
       padding: `${vars.spacing[300]} ${vars.spacing[200]}`,
     },
   },
+});
+
+export const pageTitleStyles = style({
+  marginBottom: vars.spacing[400],
 });

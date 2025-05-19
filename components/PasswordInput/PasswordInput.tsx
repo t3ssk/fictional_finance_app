@@ -16,6 +16,7 @@ export const PasswordInput = (props: PasswordInputProps) => {
       type={passwordVisible ? 'text' : 'password'}
       Icon={passwordVisible ? EyeSlash : Eye}
       onIconClick={handleIconClick}
+      buttonTitle={passwordVisible ? 'Hide password' : 'Show password'}
     />
   );
 };

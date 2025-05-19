@@ -1,6 +1,6 @@
 import { House, ArrowsDownUp, ChartDonut, JarFill, Receipt } from 'components/Icons';
 import { Sidebar } from 'components/Sidebar/Sidebar';
-import { pageContentStyles, pageWrapperStyles } from './Layout.css';
+import { pageContentStyles, pageTitleStyles, pageWrapperStyles } from './Layout.css';
 import { Typography } from 'components/Typography/Typography';
 
 export const Layout = ({ children, title }: { children: React.ReactNode; title: string }) => {
@@ -8,7 +8,7 @@ export const Layout = ({ children, title }: { children: React.ReactNode; title: 
     <div className={pageWrapperStyles}>
       <Sidebar items={sidebarItems} />
       <div className={pageContentStyles}>
-        <Typography component="h1" preset="preset1" color="grey900">
+        <Typography component="h1" preset="preset1" color="grey900" className={pageTitleStyles}>
           {title}
         </Typography>
         {children}

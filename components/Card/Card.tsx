@@ -1,6 +1,29 @@
 import { ReactNode } from 'react';
-import { cardStyles } from './Card.css';
+import { cardStyles, cardColorVariants, cardPaddingVariants } from './Card.css';
+import clsx from 'clsx';
 
-export const Card = ({ children }: { children: ReactNode }) => {
-  return <div className={cardStyles}>{children}</div>;
+type CardProps = {
+  children: ReactNode;
+  variant?: 'default' | 'dark' | 'beige';
+  padding?: 'medium' | 'large';
+  className?: string;
+};
+export const Card = ({
+  children,
+  variant = 'default',
+  padding = 'large',
+  className,
+}: CardProps) => {
+  return (
+    <div
+      className={clsx(
+        cardStyles,
+        cardColorVariants[variant],
+        cardPaddingVariants[padding],
+        className
+      )}
+    >
+      {children}
+    </div>
+  );
 };
