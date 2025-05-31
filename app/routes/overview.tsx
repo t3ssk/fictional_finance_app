@@ -7,6 +7,7 @@ import {
   mainContentWrapperStyles,
 } from 'pages/Overview/Overview.css';
 import { Pots } from '../../pages/Overview/components/Pots';
+import { Budgets } from '../../pages/Overview/components/Budgets';
 
 export default function Overview() {
   return (
@@ -39,6 +40,7 @@ export default function Overview() {
       </section>
       <div className={mainContentWrapperStyles}>
         <Pots />
+        <Budgets />
       </div>
     </Layout>
   );

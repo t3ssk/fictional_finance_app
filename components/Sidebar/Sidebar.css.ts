@@ -7,6 +7,8 @@ const grey = vars.colors.grey;
 export const sidebarStyle = style({
   height: '100vh',
   width: '100%',
+  position: 'fixed',
+  zIndex: 3,
   backgroundColor: grey[900],
   borderRadius: `0rem ${vars.spacing[200]} ${vars.spacing[200]} 0rem`,
   paddingBottom: vars.spacing[300],
@@ -48,7 +50,6 @@ export const sidebarOpenVariants = styleVariants({
   },
   open: {
     paddingRight: vars.spacing[300],
-
     maxWidth: '18.75rem',
     '@media': {
       [mediaQuery.tablet]: {

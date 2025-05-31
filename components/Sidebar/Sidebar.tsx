@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { SidebarItem, SidebarItemProps } from './components/SidebarItem/SidebarItem';
 import {
   logoStyle,
@@ -19,9 +18,10 @@ import {
 
 type SidebarProps = {
   items: SidebarItemProps[];
+  menuExpanded: boolean;
+  setMenuExpanded: (expanded: boolean) => void;
 };
-export const Sidebar = ({ items }: SidebarProps) => {
-  const [menuExpanded, setMenuExpanded] = useState(false);
+export const Sidebar = ({ items, menuExpanded, setMenuExpanded }: SidebarProps) => {
   const openVariantClassName = menuExpanded ? 'open' : 'closed';
   const expandButtonTitle = menuExpanded ? 'Minimize Menu' : 'Expand Menu';
   const toggleMenu = () => {
