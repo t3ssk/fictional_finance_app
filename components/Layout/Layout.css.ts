@@ -9,10 +9,10 @@ export const pageContentStyles = style({
   transition: 'all 0.3s ease-in-out',
 
   '@media': {
-    [mediaQuery.mobile]: {
+    [mediaQuery.tablet]: {
       padding: `${vars.spacing[300]} ${vars.spacing[200]}`,
       maxHeight: 'calc(100vh - 3.25rem)',
-      overflowY: 'auto',
+      overflowY: 'scroll',
     },
   },
 });

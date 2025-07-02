@@ -18,8 +18,8 @@ export const balanceRowStyles = style({
 
 export const mainContentWrapperStyles = style({
   display: 'grid',
-  gridTemplateColumns: 'repeat(2, 1fr)',
-  gridTemplateRows: 'repeat(3, 1fr)',
+  gridTemplateColumns: 'repeat(2, auto)',
+  gridTemplateRows: 'repeat(5, auto)',
   gap: vars.spacing[300],
   '@media': {
     [mediaQuery.tablet]: {
@@ -38,6 +38,8 @@ export const headerStyles = style({
   justifyContent: 'space-between',
   alignItems: 'center',
   paddingBottom: vars.spacing[250],
+  justifySelf: 'flex-start',
+  width: '100%',
 });
 
 export const linkStyles = style({

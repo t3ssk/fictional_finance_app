@@ -8,6 +8,8 @@ import {
 } from 'pages/Overview/Overview.css';
 import { Pots } from '../../pages/Overview/components/Pots';
 import { Budgets } from '../../pages/Overview/components/Budgets';
+import { Transactions } from '../../pages/Overview/components/Transactions';
+import { RecurringBills } from '../../pages/Overview/components/RecurringBills';
 
 export default function Overview() {
   return (
@@ -41,6 +43,8 @@ export default function Overview() {
       <div className={mainContentWrapperStyles}>
         <Pots />
         <Budgets />
+        <Transactions />
+        <RecurringBills />
       </div>
     </Layout>
   );

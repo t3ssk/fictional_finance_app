@@ -3,7 +3,10 @@ import { vars } from 'theme.css';
 import { mediaQuery } from 'utils/mediaQuery';
 
 export const budgetCard = style({
-  maxHeight: 'fit-content',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
+  maxHeight: '100%',
 });
 
 export const budgetStyles = style({
@@ -18,7 +21,8 @@ export const budgetStyles = style({
 export const chartWrapperStyles = style({
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'flex-end',
+  alignItems: 'center',
+  flex: '1 1 auto',
   '@media': {
     [mediaQuery.mobile]: {
       flexDirection: 'column',
