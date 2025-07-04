@@ -23,6 +23,7 @@ export const chartWrapperStyles = style({
   justifyContent: 'center',
   alignItems: 'center',
   flex: '1 1 auto',
+  marginTop: '41px',
   '@media': {
     [mediaQuery.mobile]: {
       flexDirection: 'column',

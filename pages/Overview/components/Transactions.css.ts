@@ -1,8 +1,14 @@
 import { style } from '@vanilla-extract/css';
 import { vars } from 'theme.css';
+import { mediaQuery } from 'utils/mediaQuery';
 
 export const transactionsWrapperStyle = style({
   gridArea: '2 / 1 / 6 / 2',
+  '@media': {
+    [mediaQuery.tablet]: {
+      gridArea: '2 / 1 / 3 / 2',
+    },
+  },
 });
 
 export const transactionsListStyle = style({
