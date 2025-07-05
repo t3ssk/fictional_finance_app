@@ -15,7 +15,7 @@ type SharedInputProps = {
   error?: boolean;
   fullWidth?: boolean;
   ref?: React.Ref<HTMLInputElement>;
-  label: string;
+  label?: string;
   helperText?: string;
 };
 

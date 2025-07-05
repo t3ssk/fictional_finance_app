@@ -67,9 +67,8 @@ export const iconButtonStyles = style({
   justifyContent: 'center',
   padding: 0,
   width: vars.spacing[200],
-  height: vars.spacing[200],
   position: 'absolute',
   color: vars.colors.grey[900],
   right: '14.5px',
-  top: '50%',
+  height: 'calc(100% + 2px)',
 });
