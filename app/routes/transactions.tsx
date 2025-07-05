@@ -1,17 +1,15 @@
 import { Card } from 'components/Card/Card';
 import { Layout } from '../../components/Layout/Layout';
 import { BasicInput } from 'components/BasicInput/BasicInput';
-import { CaretDown, MagnifyingGlass } from 'components/Icons';
-import { Typography } from 'components/Typography/Typography';
+import { Filter, MagnifyingGlass, Sort } from 'components/Icons';
 import {
   filterRow,
-  individualSortRow,
-  nowrap,
   searchBar,
   sortByTime,
   sortByType,
   sortRow,
 } from 'pages/Transaction/Transactions.css';
+import { SortByInput } from 'pages/Transaction/components/SortByInput';
 
 export default function Transactions() {
   return (
@@ -28,22 +26,29 @@ export default function Transactions() {
               />
             </div>
             <div className={sortRow}>
-              <div className={individualSortRow}>
-                <Typography preset="preset4" color="grey500" className={nowrap}>
-                  Sort by
-                </Typography>
-                <div className={sortByTime}>
-                  <BasicInput placeholder="Latest" onChange={() => {}} Icon={CaretDown} />
-                </div>
-              </div>
-              <div className={individualSortRow}>
-                <Typography preset="preset4" color="grey500" className={nowrap}>
-                  Filter by
-                </Typography>
-                <div className={sortByType}>
-                  <BasicInput placeholder="All transactions" onChange={() => {}} Icon={CaretDown} />
-                </div>
-              </div>
+              <SortByInput
+                label="Sort by"
+                placeholder="Time"
+                MobileIcon={Sort}
+                onSelectChange={() => {}}
+                inputWrapperClassName={sortByTime}
+                values={[
+                  { label: 'Newest', value: 'newest' },
+                  { label: 'Oldest', value: 'oldest' },
+                ]}
+              />
+              <SortByInput
+                label="Category"
+                placeholder="All transactions"
+                MobileIcon={Filter}
+                onSelectChange={() => {}}
+                inputWrapperClassName={sortByType}
+                values={[
+                  { label: 'All transactions', value: 'all' },
+                  { label: 'Income', value: 'income' },
+                  { label: 'Expense', value: 'expense' },
+                ]}
+              />
             </div>
           </div>
         </Card>
